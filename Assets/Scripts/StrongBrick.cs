@@ -13,8 +13,6 @@ public class StrongBrick : Brick
         life--;
         if (life < 1)
         {
-            onDestroyed.Invoke(PointValue);
-
             //slight delay to be sure the ball have time to bounce
             Destroy(gameObject, 0.2f);
         }
